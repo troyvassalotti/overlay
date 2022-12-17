@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overlay</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/index.js"></script>
+  </head>
+  <body>
+    <main>
+      <over-lay url="https://www.example.com">
+        <img
+          slot="image"
+          src="https://images.unsplash.com/photo-1650140639930-9f0f7372e0a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+          alt=""
+          decoding="async"
+          loading="lazy"
+          width="600"
+          height="315"
+        />
+        <p slot="caption">A cool image</p>
+      </over-lay>
+    </main>
+  </body>
+</html>

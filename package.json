@@ -1,0 +1,22 @@
+{
+  "name": "@troyv/overlay",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/overlay.js",
+  "exports": {
+    ".": "./dist/overlay.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "lit": "^2.5.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  }
+}
