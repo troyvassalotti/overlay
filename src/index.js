@@ -1,4 +1,5 @@
 import { html, LitElement } from "lit";
+import { ifDefined } from "lit/directives/if-defined.js";
 import styles from "./index.styles";
 
 /**
@@ -29,8 +30,8 @@ export class Overlay extends LitElement {
 
   constructor() {
     super();
-    this.href = "";
-    this.target = "_blank";
+    this.href;
+    this.target;
   }
 
   get missingAltText() {
@@ -64,7 +65,7 @@ export class Overlay extends LitElement {
           part="link"
           class="link"
           href=${this.href}
-          target=${this.target}
+          target=${ifDefined(this.target)}
           rel="noopener noreferrer">
           ${this.renderOverlay()}
         </a>`
