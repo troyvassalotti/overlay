@@ -1,6 +1,6 @@
 {
   "name": "@troyv/overlay",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "main": "dist/overlay.js",
   "exports": {
