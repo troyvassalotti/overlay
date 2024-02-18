@@ -1,15 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Overlay</title>
-    <link rel="stylesheet" href="./index.css" />
-    <script type="module" src="/src/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <!-- for browsers that don't natively support import maps -->
+    <!-- <script async src="https://esm.sh/es-module-shims"></script> -->
+    <script type="importmap">
+      {
+        "imports": {
+          "lit": "https://esm.sh/lit@3"
+        }
+      }
+    </script>
+    <script type="module" src="./over-lay.js"></script>
   </head>
   <body>
     <main>
-      <over-lay href="https://www.example.com">
+      <h1><code>over-lay</code></h1>
+      <a href="#">
+        <over-lay>
+          <img
+            slot="image"
+            src="https://images.unsplash.com/photo-1650140639930-9f0f7372e0a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+            alt=""
+            decoding="async"
+            loading="lazy"
+            width="600"
+            height="315" />
+          <h2 slot="caption">Image with a link</h2>
+        </over-lay>
+      </a>
+      <over-lay>
         <img
           slot="image"
           src="https://images.unsplash.com/photo-1650140639930-9f0f7372e0a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
@@ -18,10 +41,20 @@
           loading="lazy"
           width="600"
           height="315" />
-        <p slot="caption">Image with a link</p>
-      </over-lay>
-      <over-lay>
-        <p slot="caption">Image without a link</p>
+        <p slot="caption">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque varius. Tellus
+          orci ac auctor augue. Nec feugiat nisl pretium fusce id velit ut tortor. Faucibus a
+          pellentesque sit amet porttitor eget dolor. Varius vel pharetra vel turpis nunc eget lorem
+          dolor sed. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. At
+          consectetur lorem donec massa sapien faucibus et. Lacus viverra vitae congue eu consequat
+          ac. Etiam dignissim diam quis enim lobortis. Nisl tincidunt eget nullam non. Sit amet
+          risus nullam eget felis eget nunc lobortis mattis. Neque vitae tempus quam pellentesque
+          nec nam aliquam. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Fermentum
+          iaculis eu non diam phasellus vestibulum lorem sed. Suscipit tellus mauris a diam maecenas
+          sed enim. Dictumst quisque sagittis purus sit amet volutpat consequat. Eu scelerisque
+          felis imperdiet proin. Gravida neque convallis a cras semper.
+        </p>
       </over-lay>
     </main>
   </body>

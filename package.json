@@ -1,23 +1,16 @@
 {
   "name": "@troyv/overlay",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "type": "module",
-  "main": "dist/overlay.js",
+  "main": "./over-lay.js",
   "exports": {
-    ".": "./dist/overlay.js"
+    ".": "./over-lay.js"
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "start": "npx http-server .",
     "format": "npx prettier --write ."
   },
   "dependencies": {
-    "lit": "^2.5.0"
-  },
-  "devDependencies": {
-    "vite": "^4.5.2"
+    "lit": "^3.1.2"
   }
 }
