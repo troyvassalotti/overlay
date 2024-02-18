@@ -11,7 +11,7 @@ import { html, css, LitElement } from "lit";
  * @csspart caption - The component's `figcaption` element.
  * @csspart content - Content wrapper for the caption.
  */
-export class Overlay extends LitElement {
+export default class Overlay extends LitElement {
   static get styles() {
     return css`
       :host {
